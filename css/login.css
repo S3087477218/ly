@@ -1,0 +1,108 @@
+/* 网页样式 */
+html{
+    background-color: #666;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 800px;
+    height: 600px;
+    background-image: url("../img/CSYFxk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin: 0;
+}
+
+/* 登录盒子 */
+#login_box{
+    width: 470px;
+    height: 280px;
+    position: absolute;
+    top: 198px;
+    left: 165px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(216, 211, 222, 0.25);
+    border-radius: 25px;
+    border: 1px solid rgba(216,211,222,0.5);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+/* 卡片 */
+#card{
+    transform: translateZ(50px);
+}
+/* 登录标题 */
+#login_box span{
+    color: white;
+    font-size: 31px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+}
+/* 输入框提示 */
+#login_box input::placeholder{
+    letter-spacing: 1px;
+    color: #787879;
+}
+/* 输入框 */
+#login_box input{
+    width: 280px;
+    height: 31px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #d8d3de;
+    background-color: #f7f0fb;
+    text-indent: 10px;
+    font-size: 13px;
+    transition-duration:0.25s;
+}
+/* 输入框，聚焦 */
+#login_box input:focus{
+    outline: none;
+    border-style:solid;
+    border-color: #62d78a;
+    box-shadow: 0 0 10px #86ded1;
+    text-indent: 10px;
+}
+/* 输入框，悬停 */
+#login_box input:hover{
+    border-color: #62d78a;
+    box-shadow: 0 0 5px #86ded1;
+}
+/* 按钮 */
+#login_box button{
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    color: honeydew;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition-duration: 0.25s;
+}
+/* 按钮悬停 */
+#login_box button:hover{
+    box-shadow: 0 0 25px whitesmoke;
+}
+/* 帮助按钮 */
+#help{
+    border: 1px solid #4ea64a;
+    background-color: #71c457;
+}
+/* 登录按钮 */
+#login{
+    border: 1px solid #5278c0;
+    background-color: cornflowerblue;
+}

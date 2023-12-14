@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Luoyue 的个人博客 - 首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./common.css"/>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <video id="vl" autoplay loop muted>
+        <source src="./video" type="video/mp4">
+    </video>
+<!-- 导航栏 -->
+<div id="nav">
+    <!-- 导航栏标题 -->
+    <a href="./index.html" id="title" class="tag text_color_white">Luoyue</a>
+    <!-- 标签 -->
+    <div id="tag_box">
+        <a onclick="onJump('0')" class="tag text_color_white">首页</a>
+        <a onclick="onJump('works')" class="tag text_color_white">作品</a>
+        <a href="./contact.html" class="tag text_color_white">联系</a>
+        <a href="./msg.html" class="tag text_color_white">留言</a>
+        <a onclick="onLogout()" class="tag text_color_white">登出</a>
+    </div>
+</div>
+
+<!-- 欢迎页 -->
+<div id="welcome">
+    <h1>欢迎~ o(*￣▽￣*)ブ</h1>
+</div>
+<section>
+    <div class="banner-box clearfix">
+        <div class="banner r">
+            <div>
+                <a class="a-img-ban img-ban-curr"><img class="img-ban" src="./img/lbt.jpg"></a> 
+                <a class="a-img-ban"><img class="img-ban" src="img/1.webp"></a>
+                <a class="a-img-ban"><img class="img-ban" src="img/2.webp"></a>
+                <a class="a-img-ban"><img class="img-ban" src="img/3.webp"></a>
+            </div>
+            <ul class="r">
+                <li class="li-img curr"><img src="img/lbt.jpg"><div class="mask"></div></li>
+                <li class="li-img"><img src="img/1.webp"><div class="mask"></div></li>
+                <li class="li-img"><img src="img/2.webp"><div class="mask"></div></li>
+                <li class="li-img"><img src="img/3.webp"><div class="mask"></div></li>
+            </ul>
+        </div>
+        <div class="art l">
+            <h2 class="art-txt"><em class="iconfont icon-zan "></em> <span>推荐文章</span> </h2>
+            <ul class="art-list">
+                <li><a href="https://www.jianshu.com/p/bd89212ffd97" ><em class="iconfont icon-dian "></em><span>CSS中的flex布局</span></a></li>
+                <li><a href="https://www.jianshu.com/p/27d20df7c38c" ><em class="iconfont icon-dian "></em><span>网站内容禁止复制的js代码</span></a></li>
+                <li><a href="https://www.jianshu.com/p/dae230bb5ef3" ><em class="iconfont icon-dian "></em><span>css透明图片阴影效果+使用 ::before 添加按钮的图标</span></a></li>
+                <li><a href="https://www.jianshu.com/p/2e6062873bba" ><em class="iconfont icon-dian "></em><span>js实现滚动触底加载事件</span></a></li>
+                <li><a href="https://www.jianshu.com/p/c645400524f1" ><em class="iconfont icon-dian "></em><span>响应式与自适应</span></a></li>
+                <li><a href="https://www.jianshu.com/p/c800b12bdba4" ><em class="iconfont icon-dian "></em><span>css渐变效果</span></a></li>
+                <li><a href="https://www.jianshu.com/p/361cbe47154e" ><em class="iconfont icon-dian "></em><span> CSS&CSS3</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <article>
+        <aside class="left-box l">
+            <div class="art Label clearfix">
+                <h2 class="art-txt"> <em class="iconfont icon-biaoqian "></em> <span>热门标签</span> </h2>
+                <div> 
+                    <a class="btn label" href="#">微信小程序</a><a class="btn label" href="#">PS</a>
+                    <a class="btn label" href="#">CSS3</a><a class="btn label" href="#">特色轮播图</a>
+                    <a class="btn label" href="#">python</a><a class="btn label" href="#">javascript</a>
+                    <a class="btn label" href="#">HTML</a><a class="btn label" href="#" >响应式</a>
+                </div>
+            </div>
+            <div class="art Music mt20 clearfix">
+                <h2 class="art-txt"> <em class="iconfont icon-xing "></em> <span>我的电子木鱼</span> </h2>
+                <iframe src="./muyu/index.html" width="320" height="225"></iframe>
+            </div>
+            <div class="art Follow clearfix">
+                <h2 class="art-txt"> <em class="iconfont icon-xing "></em> <span>关注UP主</span> </h2>
+                <div class="two-code">
+                    <img src="img/bili.jpg" alt="扫一扫，关注我哦">
+                    <p class="sao-txt">扫一扫二维码，关注UP主！</p>
+                </div>
+            </div>
+            <div class="art Link mt20 clearfix">
+                <h2 class="art-txt"> <em class="iconfont icon-lianjie"></em> <span>友情链接</span> </h2>
+                <ul class="fri-link">
+                    <li><a href="https://www.w3school.com.cn/" target="_blank" rel="nofollow">w3school</a></li>
+                    <li><a href="https://www.runoob.com/" target="_blank" rel="nofollow">菜鸟教程</a></li>
+                    <li><a href="https://www.bejson.com/default.htm" target="_blank" rel="nofollow">在线json工具</a></li>
+                    <li><a href="https://cli.im/" target="_blank" rel="nofollow">草料二维码</a></li>
+                    <li><a href="https://www.iconfont.cn/" target="_blank" rel="nofollow">阿里巴巴矢量图库</a></li>
+                    <li><a href="https://www.aliyun.com/minisite/goods?userCode=2ebbhwss&share_source=copy_link&accounttraceid=b858bc8681db48cbaf2622a59c53bf8dutwv" target="_blank" rel="nofollow">阿里云小站</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="art-right r">
+            <h2 class="art-txt">&nbsp;&nbsp;<em class="iconfont icon-wifi "></em> <span>最新文章</span></h2>
+            <div class="art-model">
+                <h3><a href="#" >【前端小案例】CSS旋转小风车</a></h3>
+                <p class="dateview"><span>发布时间：2023/12/12</span> <span>作者：Luoyue</span></p>
+                <dl class="img-txt">
+                    <dt>
+                        <img src="img/lbt.jpg" alt="网站三层架构(结构层-表现层-行为层)" title="网站三层架构(结构层-表现层-行为层)">
+                    </dt>
+                    <dd>
+                        <p class="deatil">　　……让我们一起在玩闹中学习吧，这次做个旋转风车吧，学以致用，熟能生巧。……风车的叶片由四个小盒子组成，利用border画出三角形，通过绝对定位调整好位置。 对整个风车的叶片的盒子添加旋转动画。……二、详细代码 html部分 css部分 gitee地址：siebe/html-css-demo (https://gitee.com/siebe/html-css-demo)[https://gitee.com……</p>
+                        <a href="https://www.jianshu.com/p/d9aca96ff324" class="btn c-fff" >查看全文</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="art-model">
+                <h3><a href="#" >Vue.js 基础-02-模板语法（常用指令v-html/v-bind/v-if/v-model/v-on，插值，参数，修饰符，缩写）</a></h3>
+                <p class="dateview"> <span>发布时间：2023/12/12</span> <span>作者：Luoyue</span></p>
+                <dl class="img-txt">
+                    <dt>
+                        <img src="img/1.webp" alt="Vue.js 基础-02-模板语法（常用指令v-html/v-bind/v-if/v-model/v-on，插值，参数，修饰符，缩写）" title="Vue.js 基础-02-模板语法（常用指令v-html/v-bind/v-if/v-model/v-on，插值，参数，修饰符，缩写）">
+                    </dt>
+                    <dd>
+                        <p class="deatil">　　前言：Vue.js 使用了基于 HTML 的模板语法，允许开发者声明式地将 DOM 绑定至底层 Vue 实例的数据。Vue.js 的核心是一个允许你采用简洁的模板语法来声明式的将数据渲染进 DOM 的系统。
+                            结合响应系统，在应用状态改变时， Vue 能够智能地计算出重新渲染组件的最小代价并应用到 DOM 操作上。</p>
+                        <a href="https://www.jianshu.com/p/7f4073fe3c7c" class="btn  c-fff" >查看全文</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="art-model">
+                <h3><a href="#">CSS基础-13-垂直导航栏（详细创建过程）</a></h3>
+                <p class="dateview"> <span>发布时间：2023/12/12</span> <span>作者：Luoyue</span></p>
+                <dl class="img-txt">
+                    <dt> 
+                        <img src="img/3.webp" alt="CSS基础-13-垂直导航栏（详细创建过程）" title="CSS基础-13-垂直导航栏（详细创建过程）">
+                    </dt>
+                    <dd>
+                        <p class="deatil">　　@[toc] 前言 一步一步做出一个完整的导航栏 1.</p>
+                        <a href="https://www.jianshu.com/p/4790dd7f706b" class="btn  c-fff">查看全文</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="art-model">
+                <h3><a href="#" >S6模块化和webpack打包（webpack部分）</a></h3>
+                <p class="dateview"> <span>发布时间：2023/12/12</span> <span>作者：Luoyue</span></p>
+                <dl class="img-txt">
+                    <dt>
+                        <img src="img/2.webp" alt="S6模块化和webpack打包（webpack部分）" title="S6模块化和webpack打包（webpack部分）">
+                    </dt>
+                    <dd>
+                        <p class="deatil">　　问题的产生
+                            浏览器环境中模块化开发的问题：
+                            
+                            效率问题：模块化导致JS代码需要不断的被细分, 而精细的模块划分带来了更多的JS文件, 更多的JS文件带来了更多的网络请求, 降低了页面访问效率
+                            兼容性问题：
+                            浏览器不识别ES6（或者更高版本的JS语法）语法，或者CSS预编译处理器（如less，scss）
+                            目前浏览器仅支持ES6的模块化, 那么意味着我们不能在代码中书写commonjs规范的代码, 更意味着我们在浏览器更加不能用commonjs导出的库和包, 我们知道, 学习了npm, yarn这类包管理工具以后, 我们不会再用很low的方式去引入库或者包, 都会用npm install的方式。
+                            
+                            作者：生命里那束光
+                            链接：https://www.jianshu.com/p/c75281709110
+                            来源：简书
+                            著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+                        <a href="https://www.jianshu.com/p/c75281709110" class="btn  c-fff" >查看全文</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="art-model">
+                <h3><a href="#" >Pygame Zero库教程-鼠标点击事件</a></h3>
+                <p class="dateview"> <span>发布时间：2023/12/12</span> <span>作者：Luoyue</span></p>
+                <dl class="img-txt">
+                    <dt> <img src="img/4.webp" alt="Pygame Zero库教程-鼠标点击事件" title="Pygame Zero库教程-鼠标点击事件">
+                    </dt>
+                    <dd>
+                        <p class="deatil">　　Actor重要属性和方法：
+
+                            其他属性同pygame.Rect
+                            
+                            外观：image， 如alien.image = 'alien_hurt'
+                            位置: piex坐标值：x,y, 设置位置：pos，left/right/top/bottom
+                            角度：angle
+                            绘制f方法：draw()
+                            距离方法: Actor.distance_to(target)
+                            角度方法：Actor.angle_to(target)
+                            
+                            作者：象骑士Hack
+                            链接：https://www.jianshu.com/p/c57990a8b368
+                            来源：简书
+                            著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+                        <a href="https://www.jianshu.com/p/c57990a8b368" class="btn  c-fff" >查看全文</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </article>
+</section>
+<footer class="clearfix"><p>@Luoyue的个人博客</p></footer>
+<script src="js/index.js"></script>
+<script  src="js/lbt.js"></script>
+<script type="text/javascript" src="js/selector.js"></script>
+</body>
+</html>

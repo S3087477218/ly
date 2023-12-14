@@ -1,0 +1,233 @@
+/* 网页样式 */
+html{
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height: 68vh;
+    background-image: url("../img/snow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 75%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* 导航栏文字颜色 */
+.text_color_white{
+    color: whitesmoke;
+}
+.text_color_blank{
+    color: black;
+}
+/* 显示导航栏 */
+.nav_bg_white{
+    background-color: rgba(245, 245, 245, 0.95);
+}
+/* 导航栏 */
+#nav{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    transition: 0.6s;
+    position: fixed;
+    z-index: 2;
+}
+/* 导航栏标题 */
+#nav #title{
+    position: relative;
+    left: 105px;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "Corbel Light", serif;
+    text-decoration:none;
+    transition-duration: 0.3s;
+}
+/* 导航栏标签盒子 */
+#tag_box{
+    position: absolute;
+    right: 137px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 17px;
+    font-family: "微软雅黑 Light", serif;
+}
+/* 导航栏a标签 */
+#tag_box a{
+    margin-right: 38px;
+    text-decoration:none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+/* a标签下划线效果 */
+#tag_box a::after{
+    content: "";
+    width: 32px;
+    height: 1px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+#tag_box a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* 导航栏a标签悬停效果 */
+#tag_box a:hover{
+    color: rgba(66, 206, 110, 0.75);
+}
+
+/* 动画，光标闪烁 */
+@keyframes blink {
+    0%,49%{
+        opacity: 0;
+    }
+    50%,100%{
+        opacity: 1;
+    }
+}
+/* 动画，打字效果 */
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: calc(var(--count) * 40px);
+    }
+}
+/* 欢迎 */
+#welcome{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+/* 欢迎h1文字 */
+#welcome h1{
+    position: relative;
+    top: 60px;
+    color: #fff;
+    letter-spacing: 3px;
+    width: 40px;
+    white-space: nowrap;
+    font-size: 37px;
+    overflow: hidden;
+    --count: 10;
+    animation: typing 1.8s steps(var(--count)) forwards;
+    user-select: none;
+    font-family: 細明體-ExtB, serif;
+}
+#welcome h1::after{
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    animation: blink 1s linear infinite;
+}
+
+/* 内容 */
+#content{
+    position: absolute;
+    top: 68vh;
+    width: 100vw;
+    min-height: 120vh;
+    /* background-color: whitesmoke; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    user-select: none;
+    border-left: 2px dashed #aaa;
+}
+/* 内容标签 */
+#content h2{
+    font-size: 39px;
+    margin: 0;
+    font-family: "华文细黑", serif;
+    font-weight: 600;
+}
+/* 内容p标签 */
+#content p{
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 新宋体, serif;
+    transition: 0.35s ease;
+}
+#works p:hover{
+    cursor: pointer;
+    color: rgb(48,106,152);
+}
+/* 分割线 */
+#content hr{
+    background-color: #dee2e6;
+    width: 800px;
+    height:1px;
+    border:none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+/* 作品 */
+#works{
+    position: relative;
+    left: 50px;
+    width: 50vw;
+}
+/* 其他 */
+#other{
+    position: relative;
+    left: 350px;
+    width: 50vw;
+}
+/* 联系 */
+#call{
+    position: relative;
+    left: 50px;
+    width: 50vw;
+}
+#call .tencent{
+    position: relative;
+    left: 13px;
+}
+/* 页脚 */
+#footer{
+    position: absolute;
+    left: 350px;
+    width: 50vw;
+    bottom: 25px;
+    text-align: center;
+    color: rgba(102, 102, 102, 0.8);
+}
+/* 视频 */
+video{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -11;
+}
+source{
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
